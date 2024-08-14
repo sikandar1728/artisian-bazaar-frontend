@@ -1,0 +1,341 @@
+.user-info {
+    padding-block-end: 30px;
+    border-block-end: 1px solid darkgray;
+}
+
+.user-profile-avatar {
+    inline-size: 120px;
+    block-size: 120px;
+    border-radius: 50%;
+    border: 1px solid darkgrey;
+}
+
+.avatar-background {
+    width: 120px;
+    height: 120px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.settings-icon {
+    block-size: 25px;
+    cursor: pointer;
+}
+
+.user-detail-sections {
+    inline-size: 75%;
+}
+
+.user-detail-section h3 {
+    font-weight: 600;
+}
+
+.title-edit-profile-row .edit-profile-button {
+    block-size: 35px;
+    background-color: #0095F6;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 15px;
+    color: white;
+}
+
+.post-foolower-following-section {
+    justify-content: space-between;
+}
+
+.mobile-post-following-section {
+    display: none;
+}
+
+.post-foolower-following-section h5 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.posts-cards {
+    padding-block-start: 15px;
+    align-items: stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+@media only screen and (max-width : 740px) {
+    .avatar-background {
+        inline-size: 100px;
+        block-size: 100px;
+    }
+}
+
+@media only screen and (max-width : 620px) {
+    .user-detail-section .post-foolower-following-section {
+        display: none !important;
+    }
+
+    .mobile-post-following-section {
+        display: block;
+        border-block-end: 1px solid darkgray;
+    }
+
+    .user-detail-section .title-edit-profile-row {
+        display: block !important;
+    }
+
+    .user-detail-section .title-edit-profile-row h3 {
+        margin-inline-start: 20px;
+    }
+
+    .content-section {
+        padding: 20px 20px;
+    }
+
+    .user-info {
+        padding-block-end: 15px;
+    }
+}
+
+@media only screen and (max-width : 440px) {
+    .avatar-background {
+        inline-size: 70px;
+        block-size: 70px;
+    }
+
+    .user-detail-section .title-edit-profile-row h3 {
+        font-size: 16px;
+    }
+
+    .title-edit-profile-row button {
+        font-size: 13px;
+        padding: 3px 10px;
+    }
+}
+
+@media only screen and (max-width : 330px) {
+    .post-foolower-following-section h5 {
+        font-size: 14px;
+    }
+
+    .avatar-background {
+        inline-size: 65px;
+        block-size: 65px;
+    }
+
+    .avatar-section {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
+
+.card {
+    flex: 0 0 calc(33.33% - 4px);
+    margin-inline-end: 5px;
+    margin-block-end: 5px;
+    border-radius: 0px;
+    display: block;
+    inline-size: 100%;
+    block-size: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.card:hover .card-overlay {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.card .card-overlay {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:nth-child(3n) {
+    margin-inline-end: auto;
+}
+
+.card:nth-last-child(-n+3) {
+    flex-basis: calc(33.33% - 4px);
+}
+
+@media only screen and (max-width : 1195px) {
+    .card {
+        block-size: 200px;
+    }
+}
+
+@media only screen and (max-width : 620px) {
+    .card {
+        block-size: 150px;
+    }
+}
+
+@media only screen and (max-width : 440px) {
+    .card {
+        flex: 0 0 calc(33.33% - 2px);
+        margin-inline-end: 2px;
+        margin-block-end: 2px;
+        block-size: 120px;
+    }
+
+    .card:nth-child(3n) {
+        margin-inline-end: 0px;
+    }
+
+    .card:nth-last-child(-n+3) {
+        flex-basis: calc(33.33% - 2px);
+    }
+}
+
+@media only screen and (max-width : 330px) {
+    .card {
+        block-size: 100px;
+    }
+}
+
+
+
+.singlepost-overlay {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.singlepost-content {
+    background-color: white;
+    inline-size: 70%;
+    block-size: 70vh;
+    border-radius: 4px;
+    z-index: 10000;
+    font-family: 'Montserrat';
+    color: white;
+}
+
+.singlepost-image {
+    /* padding: 20px 10px 0px 10px;
+    border-block-end: 1px solid darkgray;
+    position: relative; */
+    width: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.singlepost-overlay>svg {
+    position: absolute;
+    inset-inline-end: 70px;
+    top: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+.singlepost-body {
+    width: 50%;
+    padding: 20px;
+}
+
+.singlepost-body>.users {
+    border-block-end: 1px solid darkgray;
+    padding-block-end: 10px;
+}
+
+.singlepost-body .users .avatar {
+    inline-size: 40px;
+    block-size: 40px;
+}
+
+.singlepost-body .like-comment-section {
+    position: absolute;
+    inset-block-end: 20px;
+}
+
+.caption p {
+    color: black;
+}
+
+@media screen and (max-width : 768px) {
+    .singlepost-content {
+        inline-size: 90%;
+    }
+
+    .singlepost-body>svg {
+        inset-inline-end: 15px;
+    }
+}
+
+.users .avatar {
+    inline-size: 60px;
+    block-size: 60px;
+}
+
+.users .username h4 {
+    margin-block-end: 0px;
+}
+
+.username a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.users .username h6 {
+    font-weight: 700;
+    color: #0095F6;
+}
+
+
+.popup-overlay {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.popup-content {
+    background-color: crimson;
+    inline-size: 250px;
+    border-radius: 4px;
+    text-align: center;
+    z-index: 10000;
+    padding: 0px;
+}
+
+.popup-content p {
+    margin-block-end: 0px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-block-end: 1px solid darkgray;
+    transition: all 0.3s ease-in-out;
+}
+
+.popup-content p:hover {
+    background-color: darkred;
+    font-weight: 700;
+    letter-spacing: 1px;
+}

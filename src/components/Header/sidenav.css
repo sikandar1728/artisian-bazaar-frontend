@@ -1,0 +1,31 @@
+@media only screen and (max-width : 1040px) {
+    .brand_name .crafteo-responsive {
+        display: block;
+        padding: 0;
+        margin-left: 2.5;
+    }
+
+    .brand_name img {
+        display: none;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .menu ul li:hover,
+    .profile-dropdown:hover {
+        background-color: #1f1f38;
+        border-radius: 0;
+    }
+
+    .desktop-navbar {
+        width: 70px;
+    }
+}
+
+@media only screen and (max-width : 700px) {
+    .desktop-navbar {
+        display: none;
+    }
+}

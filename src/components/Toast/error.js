@@ -1,0 +1,15 @@
+import { Bounce, toast } from "react-toastify";
+
+export const errorToast = (message) => {
+    return toast.error(message, {
+        position: "top-right",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Bounce,
+    });
+}

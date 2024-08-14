@@ -1,0 +1,60 @@
+.edit-profile-section h2 {
+    font-weight: 700;
+    inline-size: fit-content;
+    border-block-end: 1px solid darkgray;
+}
+
+.edit-profile-form form img {
+    inline-size: 120px;
+    block-size: 120px;
+    border: 1px solid darkgray;
+    border-radius: 50%;
+}
+
+.avatar-background-setting {
+    inline-size: 100px;
+    block-size: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.edit-profile-body input {
+    padding: 5px 10px;
+}
+
+.form-body button {
+    padding: 8px 30px;
+    width: 100%;
+    color: white;
+}
+
+.edit-profile-form button {
+    background-color: #0095F6;
+    border: none;
+}
+
+.custom-input-file {
+    color: transparent;
+}
+
+.custom-input-file::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.choose-file {
+    margin: auto;
+}
+
+.custom-input-file::before {
+    content: 'Change profile photo ';
+    color: #0095F6;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 10pt;
+    width: 100%;
+    text-align: center;
+}
